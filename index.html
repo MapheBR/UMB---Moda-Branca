@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitária - Jalecos, Scrubs e Acessórios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="https://universitaria.com" class="logo-link">
+                <img src="logo.png" alt="Universitaria Logo" class="header-logo">
+            </a>
+            <div class="nav-links">
+                <a href="https://universitaria.com">Home</a>
+                <div class="produtos-dropdown">
+                    <a href="https://universitaria.com/produtos">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="https://universitaria.com/produtos/jalecos">Jalecos</a>
+                        <a href="https://universitaria.com/produtos/scrubs">Scrubs</a>
+                        <a href="https://universitaria.com/produtos/acessorios">Acessórios</a>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-count">0</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="swiper-container hero-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?fit=crop&h=800&w=1200" alt="Jalecos Premium">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1624127663472-1a1af47e9d8b?fit=crop&h=800&w=1200" alt="Scrubs Profissionais">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?fit=crop&h=800&w=1200" alt="Acessórios Médicos">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Elegância e Conforto para Profissionais da Saúde</h1>
+            <p>Descubra nossa coleção exclusiva de jalecos, scrubs e acessórios</p>
+            <a href="https://universitaria.com/produtos" class="cta-button">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2 class="section-title">Jalecos em Destaque</h2>
+        <div class="product-carousel">
+            <div class="swiper-container jalecos-carousel">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <a href="https://universitaria.com/produtos/jalecos" class="see-more">
+                Ver Mais Jalecos <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <h2 class="section-title">Scrubs em Destaque</h2>
+        <div class="product-carousel">
+            <div class="swiper-container scrubs-carousel">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <a href="https://universitaria.com/produtos/scrubs" class="see-more">
+                Ver Mais Scrubs <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <h2 class="section-title">Acessórios em Destaque</h2>
+        <div class="product-carousel">
+            <div class="swiper-container acessorios-carousel">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <a href="https://universitaria.com/produtos/acessorios" class="see-more">
+                Ver Mais Acessórios <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="products-page">
+        <h2 class="products-title section-title">Todos os Produtos</h2>
+        <div class="category-filters">
+            <button class="category-filter active" data-category="all">Todos</button>
+            <button class="category-filter" data-category="jalecos">Jalecos</button>
+            <button class="category-filter" data-category="scrubs">Scrubs</button>
+            <button class="category-filter" data-category="acessorios">Acessórios</button>
+            <div class="sort-filters">
+                <select id="sortBy">
+                    <option value="name-asc">Nome (A-Z)</option>
+                    <option value="name-desc">Nome (Z-A)</option>
+                    <option value="price-asc">Preço (Menor-Maior)</option>
+                    <option value="price-desc">Preço (Maior-Menor)</option>
+                    <option value="popular">Mais Vendidos</option>
+                </select>
+            </div>
+        </div>
+        <div class="products-grid-page"></div>
+    </section>
+
+    <div class="cart-page">
+        <div class="cart-container">
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">R$ 0.00</span>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="customer-info-modal">
+        <div class="customer-info-modal-content">
+            <div class="customer-info-modal-header">
+                <h2>Finalizar Pedido</h2>
+                <button class="customer-info-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="customer-info-modal-body">
+                <label for="customerName">Seu Nome:</label>
+                <input type="text" id="customerName" class="customer-name-input" placeholder="Digite seu nome completo">
+            </div>
+            <div class="customer-info-modal-actions">
+                <button class="cancel-customer-info">Cancelar</button>
+                <button class="confirm-customer-info">Confirmar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details-modal">
+        <div class="modal-content"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><i class="far fa-envelope"></i> contato@universitaria.com</p>
+                <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/universitaria" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
